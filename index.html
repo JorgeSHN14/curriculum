@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,6 +26,7 @@
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#oficinas">Oficinas</a></li>
         </ul>
     </nav>
     <main>
@@ -28,19 +35,79 @@
             <p>Me he dedicado al aprendizaje del desarrollo web, trabajando tanto a nivel personal como profesional,
                 algunas de las tecnologías que más me han gustado son javascript con librerías como react, o python y
                 php y sus implementaciones en CRM's como Vtiger y ERP's como Odoo.</p>
-                <img src="https://placehold.co/600x400" alt="Placeholder Image" />
+            <img src="https://placehold.co/600x400" alt="Placeholder Image" />
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <table>
+                <tr>
+                    <th>Empresa/Proyecto</th>
+                    <th>Tecnologías</th>
+                </tr>
+                <tr>
+                    <td>Frelance Odoo</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Frelance Vtiger</td>
+                    <td>Vtiger, PHP, Javascript</td>
+                </tr>
+                <tr>
+                    <td>Sheinpol</td>
+                    <td>HTML, CSS, Javascript, DOM, React, Supabase</td>
+                </tr>
+                <tr>
+                    <td>Elitelogis</td>
+                    <td>Wordpress, HTML, CSS, Javascript, PHP</td>
+                </tr>
+            </table>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>DOM</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Vtiger Developer</li>
+                <li>Odoo Developer</li>
+                <li>Supabase</li>
+                <li>Wordpress</li>
+            </ol>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+        </section>
+        <section id="oficinas">
+            <form action="">
+                <label for="username">Nombre:</label>
+                <input type="text" name="username" id="username">
+                <label for="email">Correo:</label>
+                <input type="email" name="email" id="email">
+                <label for="experience">Experiencia:</label>
+                <textarea name="experience" id="experience"></textarea>
+                <label for="motivo">Motivo</label>
+                <select id="motivo" name="motivo">
+                    <option value="contratar">Contratar</option>
+                    <option value="duda">Duda</option>
+                    <option value="comentario">Comentario</option>
+                </select>
+                <label for="razonsocial">Soy:</label>
+                <label>
+                    <input type="radio" name="razonsocial" value="Empresa"/>Empresa
+                </label>
+                <labe>
+                    <input type="radio" name="razonsocial" value="Persona"/>Persona
+                </label>
+                
+            </form>
+            <div id="map"></div>
         </section>
     </main>
     <footer>
@@ -50,5 +117,15 @@
             <li><a href="https://github.com/JorgeSHN14">GitHub</a></li>
         </ul>
     </footer>
-
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+        L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('Un marcador en Londres.')
+            .openPopup();
+    </script>
 </body>
