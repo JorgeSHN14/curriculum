@@ -1,0 +1,63 @@
+* {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+#photo {
+    width: 200px;
+    height: auto;
+}
+
+.subtitle {
+    color: rgb(107 114 128 / 0.89);
+    text-transform: uppercase;
+}
+
+section {
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+     /* borde redondeado con un radio de 5 píxeles */
+
+   /* en navegadores basados en WebKit, 
+   como versiones antiguas de Safari y Chrome. */
+   -webkit-border-radius: 5px; 
+
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 5px;    
+
+   /* en navegadores modernos. */
+   border-radius: 5px;
+   /* sombra a un elemento */
+
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
+
+#map {
+    height: 400px;
+}
