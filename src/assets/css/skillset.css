@@ -1,0 +1,51 @@
+#skillset > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#skillset > div > div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#skillset img {
+    border-radius: 1rem;
+    max-width: 7rem;
+    cursor: context-menu;
+}
+
+#skillset span {
+    width: 7.5rem;
+    background-color: var(--black2);
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 50%;
+    transform: translate(-60px,10px);
+    opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+    pointer-events: none;
+}
+
+#skillset > div > div:hover  span{
+    opacity: 1;
+    transform: translate(-60px, 0px);
+}
+
+#skillset span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: -0.25rem;
+    border-color: var(--black2) transparent transparent transparent;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Herrera Nieto | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="circle" src="./assets/img/logos/large.png" alt="Portfolio Icon"/>
+        <h1>Jorge Herrera Nieto</h1>
+        <hr/>
+        <h2>Software Development</h2>
+        <video autoplay loop muted>
+            <source src="./assets/video/hero.mp4"/>
+        </video>
+    </header>
+    <nav id="navbar">
+        <div>
+            <a href="">
+                <img class="circle" src="./assets/img/logos/small.png" alt="small icon">
+                <span>Jorge Herrera Nieto <small>Software Development</small></span>
+            </a>
+            <button id="hamburguer">☰</button>
+        </div>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skillset">Skillset</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="portfolio">
+            <h3>Portfolio</h3>
+            <hr/>
+            <button>
+                <img src="./assets/img/portfolio/1.png" alt="Primer proyecto"/>
+                <h4>Primer proyecto</h4>
+            </button>
+            <button>
+                <img src="./assets/img/portfolio/2.png" alt="Segundo proyecto"/>
+                <h4>Segundo proyecto</h4>
+            </button>
+            <button>
+                <img src="./assets/img/portfolio/3.png" alt="Tercer proyecto"/>
+                <h4>Tercer proyecto</h4>
+            </button>
+        </section>
+        <section id="skillset" class="even">
+            <h3>Skillset</h3>
+            <hr/>
+            <div>
+                <div>
+                    <img src="./assets/img/skillset/html.svg" alt="html icon">
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/css.svg" alt="css icon">
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/js.svg" alt="javascript icon">
+                    <span class="tooltip">JavaScript</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/git.svg" alt="git icon">
+                    <span class="tooltip">GIT</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/npm.svg" alt="npm icon">
+                    <span class="tooltip">npm</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/bash.svg" alt="html icon">
+                    <span class="tooltip">Bash</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/node.svg" alt="node.js icon">
+                    <span class="tooltip">Node.js</span>
+                </div>
+                <div>
+                    <img src="./assets/img/skillset/react.svg" alt="react icon">
+                    <span class="tooltip">React</span>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h3>Experience</h3>
+            <hr/>
+            <div>
+                <a>
+                    <img src="./assets/img/experience/1.svg" data-modal-id="myModal"/>
+                    <h4>Primera experiencia</h4>
+                </a>
+                <a>
+                    <img src="./assets/img/experience/2.svg" alt=""/>
+                    <h4>Segunda experiencia</h4>
+                </a>
+                <a>
+                    <img src="./assets/img/experience/3.svg" alt=""/>
+                    <h4>Tercera experiencia</h4>
+                </a>
+                <a>
+                    <img src="./assets/img/experience/4.svg" alt=""/>
+                    <h4>Cuarta experiencia</h4>
+                </a>
+                <a>
+                    <img src="./assets/img/experience/5.svg" alt=""/>
+                    <h4>Quinta experiencia</h4>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="even">
+            <h3>Contact</h3>
+            <hr/>
+            <form action="https://formspree.io/f/xvojzaqv" method="POST">
+                <label>
+                    Your email:<br />
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:<br />
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+            <nav id="social-media">
+                <a href="https://www.linkedin.com/in/jorgeherreranieto/">
+                    <img id="linkedin" src="./assets/img/social/linkedin.png" alt="My LinkedIn">
+                </a>
+                <a href="https://github.com/JorgeSHN14">
+                    <img id="github" src="./assets/img/social/github.png" alt="My Github">
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <small>Developed and designed by Jorge Herrera Nieto. &copy;2023 All rights reserved.</small>
+    </footer>
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+      
+          Mi primer trabajo
+          
+          <button class="eins-modal-close-button">OK</button>
+        </div>
+      </div>
+</body>
+</html>
