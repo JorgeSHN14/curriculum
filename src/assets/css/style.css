@@ -239,6 +239,7 @@ section hr{
 #experience div{
     display: grid;
     grid-template-columns: 400px 400px;
+    justify-content: center;
 }
 form {
     font-size: 1.2rem;
